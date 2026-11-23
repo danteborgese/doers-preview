@@ -13,7 +13,15 @@ html{scroll-padding-top:4.25rem}.scroll-mt-20{scroll-margin-top:0}main#content>d
 .letter-embed{display:block;width:100%;max-width:480px;height:320px;margin-top:1.75rem;border:1px solid #EEE;background:#fff}
 .footer-mail{display:block;margin-top:.75rem;max-width:100%;font-family:var(--font-garamond),Georgia,serif;font-style:italic;font-size:clamp(1.02rem,2.6vw,1.45rem);line-height:1.3;color:var(--fog);overflow-wrap:anywhere}
 #about .about-layout{display:flex;flex-direction:column;gap:2.75rem;margin-top:1.75rem}
+#about .about-copy{position:relative;z-index:2}
 #about .about-photo{margin:0 -1.25rem}
-#about .about-photo img{display:block;width:100%;height:auto;max-width:none;aspect-ratio:1600/844;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 13%,#000 90%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 7%,#000 74%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0%,#000 13%,#000 90%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 7%,#000 74%,transparent 100%);mask-composite:intersect}
+#about .about-photo img{display:block;width:100%;height:auto;max-width:none;aspect-ratio:1600/844;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 12%,#000 88%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 8%,#000 78%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0%,#000 12%,#000 88%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 8%,#000 78%,transparent 100%);mask-composite:intersect}
 #about .about-quote{display:block;margin:2.25rem 0 0;max-width:40rem;padding-top:1.35rem;border-top:1px solid color-mix(in srgb,var(--paper) 22%,transparent);font-size:clamp(1.7rem,2.5vw,2.35rem);line-height:1.16}
 @media (min-width:48rem){#about .about-photo{margin:0 -2.5rem}}
+@media (min-width:64rem){
+#about{overflow-x:clip}
+#about .about-layout{display:block;position:relative;min-height:calc(min(78vw,1320px) * 844 / 1600)}
+#about .about-copy{max-width:34rem;padding-right:2rem}
+#about .about-photo{position:absolute;z-index:1;top:50%;right:-7vw;width:min(78vw,1320px);margin:0;transform:translateY(-50%);pointer-events:none}
+#about .about-photo img{width:100%;height:auto;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 34%,#000 100%),linear-gradient(to bottom,transparent 0%,#000 10%,#000 82%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,#000 34%,#000 100%),linear-gradient(to bottom,transparent 0%,#000 10%,#000 82%,transparent 100%)}
+}
