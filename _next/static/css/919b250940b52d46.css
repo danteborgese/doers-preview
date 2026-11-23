@@ -17,3 +17,12 @@ html{scroll-padding-top:4.25rem}.scroll-mt-20{scroll-margin-top:0}main#content>d
 .paper-subscribe input[type=email]::placeholder{color:var(--slate);opacity:1}
 .paper-subscribe button{min-height:2.75rem;width:100%;border:1px solid var(--safelight);background:transparent;color:var(--safelight);padding:0 1.15rem;font:inherit;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;cursor:pointer}
 @media (min-width:40rem){.paper-subscribe-row{flex-direction:row;align-items:stretch}.paper-subscribe button{width:auto;flex:0 0 auto}}
+
+#about .about-layout{display:grid;gap:2.75rem;margin-top:1.5rem}
+#about .about-quote{border-top:1px solid color-mix(in srgb,var(--paper) 22%,transparent);padding-top:1.5rem}
+#about .about-quote blockquote{margin:0;font-size:clamp(1.85rem,6.4vw,2.35rem);line-height:1.16}
+@media (min-width:64rem){
+#about .about-layout{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);column-gap:4.75rem;align-items:center}
+#about .about-quote{border-top:0;padding-top:0;padding-left:2.75rem;border-left:1px solid color-mix(in srgb,var(--paper) 22%,transparent)}
+#about .about-quote blockquote{font-size:clamp(2.2rem,2.65vw,3.2rem);line-height:1.12}
+}
