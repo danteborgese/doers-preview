@@ -12,12 +12,8 @@ html{scroll-padding-top:4.25rem}.scroll-mt-20{scroll-margin-top:0}main#content>d
 @media (min-width:40rem){.hero-subscribe-row{flex-direction:row;align-items:stretch}.hero-subscribe button{width:auto;flex:0 0 auto}}
 .letter-embed{display:block;width:100%;max-width:480px;height:320px;margin-top:1.75rem;border:1px solid #EEE;background:#fff}
 .footer-mail{display:block;margin-top:.75rem;max-width:100%;font-family:var(--font-garamond),Georgia,serif;font-style:italic;font-size:clamp(1.02rem,2.6vw,1.45rem);line-height:1.3;color:var(--fog);overflow-wrap:anywhere}
-#about .about-layout{display:flex;flex-direction:column;gap:2.25rem;margin-top:1.75rem}
-#about .about-photo{margin:0}
-#about .about-photo img{display:block;width:100%;height:auto;object-fit:cover;object-position:45% 40%}
-#about .about-quote{display:block;margin:2.25rem 0 0;max-width:34rem;padding-top:1.35rem;border-top:1px solid color-mix(in srgb,var(--paper) 22%,transparent);font-size:clamp(1.7rem,2.5vw,2.35rem);line-height:1.16}
-@media (min-width:64rem){
-#about .about-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(16rem,.85fr);column-gap:3.5rem;align-items:stretch}
-#about .about-photo{position:relative;min-height:100%}
-#about .about-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:45% 40%}
-}
+#about .about-layout{display:flex;flex-direction:column;gap:2.75rem;margin-top:1.75rem}
+#about .about-photo{margin:0 -1.25rem}
+#about .about-photo img{display:block;width:100%;height:auto;max-width:none;aspect-ratio:1600/844;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 13%,#000 90%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 7%,#000 74%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0%,#000 13%,#000 90%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 7%,#000 74%,transparent 100%);mask-composite:intersect}
+#about .about-quote{display:block;margin:2.25rem 0 0;max-width:40rem;padding-top:1.35rem;border-top:1px solid color-mix(in srgb,var(--paper) 22%,transparent);font-size:clamp(1.7rem,2.5vw,2.35rem);line-height:1.16}
+@media (min-width:48rem){#about .about-photo{margin:0 -2.5rem}}
