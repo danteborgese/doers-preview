@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://danteborgese.github.io/doers-preview/sitemap.xml
