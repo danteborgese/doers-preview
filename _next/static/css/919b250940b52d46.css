@@ -26,3 +26,5 @@ html{scroll-padding-top:4.25rem}.scroll-mt-20{scroll-margin-top:0}main#content>d
 #about .about-photo{position:absolute;z-index:1;top:50%;right:-7vw;width:min(78vw,1320px);margin:0;transform:translateY(calc(-50% - 18%));pointer-events:none}
 #about .about-photo img{width:100%;height:auto;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 34%,#000 100%),linear-gradient(to bottom,transparent 0%,#000 10%,#000 75%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,#000 34%,#000 100%),linear-gradient(to bottom,transparent 0%,#000 10%,#000 75%,transparent 100%)}
 }
+
+@media (min-width:64rem){#notes .notes-intro{position:sticky;top:4.25rem;align-self:start}}
